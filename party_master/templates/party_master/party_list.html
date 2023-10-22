@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Party List</title>
+</head>
+<body>
+    <h1>Party List</h1>
+    <ul>
+        {% for party in parties %}
+            <li>{{ party.city_name }}</li>
+            <li>{{ party.mobile_number }}</li>
+            <li>{{ party.gst_number }}</li>
+            <li>{{ party.party_type }}</li>
+            <li>{{ party.address }}</li>
+            <li>{{ party.email_id }}</li>
+            <li>{{ party.landline_number }}</li>
+            <li>{{ party.contact_person }}</li>
+            <p>********************</p>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+
+
